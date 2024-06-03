@@ -1,0 +1,15 @@
+{
+	"params":
+	{
+		"local_server":"True",
+		"local_uri":"mysql://root:@localhost/Bloom_Taxonomy",
+		"prod_uri":"mysql://root:@localhost/Bloom_Taxonomy",
+		"fb_url":"https://facebook.com",
+		"tw_url":"https://twitter.com",
+		"git_url":"https://github.com",
+		"gmail_user":"......@gmail.com",
+		"gmail_password":"Goiihiu"
+
+
+	}
+}

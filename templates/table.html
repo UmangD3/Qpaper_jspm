@@ -1,0 +1,35 @@
+<!-- templates/table.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Table</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/new2.css') }}">
+</head>
+<body>
+
+<table border="1">
+    <tr>
+        <th>Knowledge</th>
+        <th>Comprehension</th>
+        <th>Application</th>
+        <th>Analysis</th>
+        <th>Synthesis</th>
+        <th>Evaluation</th>
+    </tr>
+
+    {% for i in range(questions_by_label['Knowledge']|length) %}
+        <tr>
+            <td>{{ questions_by_label['Knowledge'][i] if i < questions_by_label['Knowledge']|length else '' }}</td>
+            <td>{{ questions_by_label['Comprehension'][i] if i < questions_by_label['Comprehension']|length else '' }}</td>
+            <td>{{ questions_by_label['Application'][i] if i < questions_by_label['Application']|length else '' }}</td>
+            <td>{{ questions_by_label['Analysis'][i] if i < questions_by_label['Analysis']|length else '' }}</td>
+            <td>{{ questions_by_label['Synthesis'][i] if i < questions_by_label['Synthesis']|length else '' }}</td>
+            <td>{{ questions_by_label['Evaluation'][i] if i < questions_by_label['Evaluation']|length else '' }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>

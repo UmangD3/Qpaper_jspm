@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ label }} Question Paper</title>
+</head>
+<body>
+    <h1>{{ label }} Question Paper</h1>
+    {% for question_number, question_text in questions %}
+        <p>({{ question_number }}) {{ question_text }}</p>
+    {% endfor %}
+</body>
+</html>

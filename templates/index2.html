@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Text Extraction</title>
+</head>
+<body>
+    <h1>Image to Text Extraction</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".jpg, .png, .jpeg" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    {% if text %}
+        <h2>Extracted Text:</h2>
+        <p>{{ text }}</p>
+        <img src="{{ url_for('static', filename=image) }}" alt="Uploaded Image">
+    {% endif %}
+</body>
+</html>

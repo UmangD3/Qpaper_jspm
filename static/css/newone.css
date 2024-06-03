@@ -1,0 +1,10 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    background-image: url('https://tophat.com/wp-content/uploads/bloomsstem-blog.png');
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
